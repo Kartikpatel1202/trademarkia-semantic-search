@@ -73,6 +73,23 @@ User Query ↓ Query Embedding (Sentence Transformers) ↓ Semantic Cache Lookup
 
 Cache Hit → Return Cached Result
 
+flowchart TD
+
+A[User Query] --> B[Query Embedding - Sentence Transformers]
+
+B --> C{Semantic Cache Lookup}
+
+C -->|Cache Hit| D[Return Cached Result]
+
+C -->|Cache Miss| E[FAISS Vector Search]
+
+E --> F[Fuzzy Clustering - Gaussian Mixture Model]
+
+F --> G[Retrieve Relevant Document]
+
+G --> H[Store Result in Semantic Cache]
+
+H --> I[Return API Response]
 
 
 # API Endpoints
