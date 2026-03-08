@@ -73,6 +73,7 @@ User Query ↓ Query Embedding (Sentence Transformers) ↓ Semantic Cache Lookup
 
 Cache Hit → Return Cached Result
 
+```mermaid
 flowchart TD
 
 A[User Query] --> B[Query Embedding - Sentence Transformers]
@@ -90,6 +91,7 @@ F --> G[Retrieve Relevant Document]
 G --> H[Store Result in Semantic Cache]
 
 H --> I[Return API Response]
+```
 
 
 # API Endpoints
