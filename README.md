@@ -73,8 +73,7 @@ User Query ↓ Query Embedding (Sentence Transformers) ↓ Semantic Cache Lookup
 
 Cache Hit → Return Cached Result
 
-Cache Miss ↓ FAISS Vector Search ↓ Fuzzy Cluster Identification ↓ Retrieve Relevant Document ↓ Store Result in Cache ↓ Return Response
----
+
 
 # API Endpoints
 
